@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="src/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sort Mashine</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <article class="main">
+      <section class="modal__container">
+        <div class="modal__input-container">
+          <label class="modal__label" for="input">Sort Machine</label>
+          <textarea
+            class="modal__textArea"
+            id="input"
+            placeholder="Enter some numbers (separated by spaces)"
+          ></textarea>
+        </div>
+        <button class="modal__button modal__button--sort">Sort</button>
+        <button class="modal__button modal__button--retry">Retry</button>
+      </section>
+
+      <article class="info">
+        <section class="sorted">
+          <div class="sorted__title">Відсортований масив</div>
+          <div class="sorted__content"></div>
+        </section>
+
+        <section class="algorithm">
+          <div class="algorithm__title">Алгоритми сортування</div>
+          <div class="algorithm__content"></div>
+        </section>
+      </article>
+      <!-- info -->
+    </article>
+    <!-- main -->
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
