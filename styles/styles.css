@@ -9,7 +9,7 @@
   font-size: 25px;
 }
 
-.modal__container {
+.modal {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -20,14 +20,13 @@
   border-radius: 10px;
   background: linear-gradient(to bottom right, blue, yellow);
 }
-.modal__input-container {
-  border-radius: 6px;
-  padding: 7px;
+.modal__container {
   width: 100%;
 }
 .modal__textArea {
   height: 150px;
   min-height: 50px;
+  max-height: 500px;
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -46,27 +45,27 @@
 .modal__textArea:focus {
   outline: none;
   box-shadow: 0 0 5px yellow;
-  border: 0;
 }
 .modal__label {
-  text-align: center;
   color: yellow;
+  text-align: center;
 }
 .modal__button {
   padding: 10px 15px;
   border: 3px solid blue;
   border-radius: 10px;
-  min-width: 250px;
+  width: 250px;
   height: 50px;
   background-color: transparent;
-  color: black;
+  color: blue;
   font-weight: bold;
+  font-size: 20px;
   text-transform: uppercase;
 }
 .modal__button:hover {
   cursor: pointer;
   background-color: blue;
-  color: white;
+  color: yellow;
 }
 .modal__button:active {
   transform: scale(0.95);
@@ -76,11 +75,13 @@
 }
 
 .info {
-  display: none;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
+  transition: opacity 1.5s;
+  opacity: 0;
 }
 
 .sorted,
@@ -89,8 +90,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  max-width: 400px;
-  min-height: 100px;
   padding: 10px 20px;
   margin: 20px;
   color: yellow;
@@ -103,7 +102,8 @@
   min-height: 50px;
   background-color: #fff;
   color: black;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.4;
   padding: 15px;
   border-radius: 7px;
 }/*# sourceMappingURL=styles.css.map */
