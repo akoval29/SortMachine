@@ -57,16 +57,14 @@ function onSort(func, arr) {
   // Виводим відсортований масив
   if (once === true) {
     result.forEach((element, index) => {
-      const listItem = document.createElement("p");
-      listItem.textContent = `${index + 1})  ${element}`;
-      sortedContent.appendChild(listItem);
+      let item = `<p>${index + 1})  ${element}</p>`;
+      sortedContent.innerHTML += item;
     });
     once = false;
   }
 
   // Виводим таймінг алгоритмів сортування
-  const listItem = document.createElement("p");
-  listItem.textContent = `${func.name}: ${elapsedTime.toFixed(2)} ms`;
-  algorithmContent.appendChild(listItem);
+  const listItem = `<p>${func.name}: ${elapsedTime.toFixed(2)} ms</p>`;
+  algorithmContent.innerHTML += listItem;
   console.log(`${func.name}: ${elapsedTime} ms`);
 }
