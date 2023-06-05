@@ -1,0 +1,109 @@
+@import url("normalize.css");
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  min-height: 100vh;
+  font-size: 25px;
+}
+
+.modal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, blue, yellow);
+}
+.modal__container {
+  width: 100%;
+}
+.modal__textArea {
+  height: 150px;
+  min-height: 50px;
+  max-height: 500px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.modal__textArea::-moz-placeholder {
+  color: grey;
+  font-style: italic;
+}
+.modal__textArea::placeholder {
+  color: grey;
+  font-style: italic;
+}
+.modal__textArea:focus {
+  outline: none;
+  box-shadow: 0 0 5px yellow;
+}
+.modal__label {
+  color: yellow;
+  text-align: center;
+}
+.modal__button {
+  padding: 10px 15px;
+  border: 3px solid blue;
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.modal__button:hover {
+  cursor: pointer;
+  background-color: blue;
+  color: yellow;
+}
+.modal__button:active {
+  transform: scale(0.95);
+}
+.modal__button--retry {
+  display: none;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  transition: opacity 1.5s;
+  opacity: 0;
+}
+
+.sorted,
+.algorithm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 20px;
+  color: yellow;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, blue, yellow);
+}
+.sorted__content,
+.algorithm__content {
+  width: 100%;
+  min-height: 50px;
+  background-color: #fff;
+  color: black;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 15px;
+  border-radius: 7px;
+}/*# sourceMappingURL=styles.css.map */
